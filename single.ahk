@@ -1,11 +1,16 @@
-;; <<<<
-;; movement
-
+; disable cap
 CapsLock::
 return
 
+; map del to cap
 Delete::CapsLock
 
+CapsLock & Space::
+    Send, {Escape}
+return
+
+;; <<<<
+;; movement
 CapsLock & h::
 if GetKeyState("alt") = 0 {
     Send, {Left}
