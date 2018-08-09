@@ -102,3 +102,15 @@ CapsLock & WheelDown::
     }
 return
 ;; <<<<
+
+
+;; >>>>
+;; sound
+CapsLock & F12::
+    Send { Volume_Up }
+return
+
+CapsLock & F11::
+    Send { Volume_Down }
+return
+;; <<<<
